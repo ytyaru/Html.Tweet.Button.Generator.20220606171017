@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+<meta charset="utf-8">
+<title>ツイートボタン・ジェネレータ</title>
+<meta name="description" content="公式アイコンを使ったツイートボタンのHTMLを生成します。コピペで使えます。">
+<meta name="author" content="ytyaru">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.ja">
+<link rel="icon" href="asset/image/avator.png">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/webmention.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="ytyaru" />
+<meta property="og:title" content="ツイートボタン・ジェネレータ" />
+<meta property="og:description" content="公式アイコンを使ったツイートボタンのHTMLを生成します。コピペで使えます。" />
+<meta property="og:image" content="https://ytyaru.github.io/Html.Tweet.Button.Generator.20220606171017/asset/image/eye-catch.png" />
+<meta property="article:published_time" content="2022-06-19:35:00+09:00" />
+<meta property="article:author" content="https://ytyaru.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "ytyaru",
+      "url": "https://ytyaru.github.io/",
+      "sameAs": [
+        "https://twitter.com/ytyaru1",
+        "https://github.com/ytyaru",
+        "https://profile.hatena.ne.jp/ytyaru/",
+        "https://mstdn.jp/@ytyaru",
+        "https://pawoo.net/@ytyaru_pawoo",
+        "https://www.pixiv.net/users/53831310",
+        "https://monaledge.com/user/MEHCqJbgiNERCH3bRAtNSSD9uxPViEX1nu",
+        "https://web3.askmona.org/user/1590",
+      ]
+    },
+    "dateModified": "2022-06-06T19:35:00+09:00",
+    "datePublished": "2022-06-06T19:35:00+09:00",
+    "headline": "ツイートボタン・ジェネレータ",
+    "image": ["https://ytyaru.github.io/Html.Tweet.Button.Generator.20220606171017/asset/image/eye-catch.png"]
+  }
+</script>
+<link rel="webmention" href="https://webmention.io/ytyaru.github.io/webmention" />
+<link rel="pingback" href="https://webmention.io/ytyaru.github.io/xmlrpc" />
+<link rel="me" href="https://twitter.com/ytyaru1">
+<link rel="me" href="https://mstdn.jp/@ytyaru">
+<link rel="me" href="https://pawoo.net/@ytyaru_pawoo">
+<link rel="me" href="https://github.com/ytyaru">
+<link rel="me" href="https://profile.hatena.ne.jp/ytyaru/">
+<link rel="me" href="https://ytyaru.hatenablog.com/">
+<link rel="me" href="https://www.pixiv.net/users/53831310">
+<link rel="me" href="https://monaledge.com/user/MEHCqJbgiNERCH3bRAtNSSD9uxPViEX1nu">
+<link rel="me" href="https://web3.askmona.org/user/1590">
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<link rel="stylesheet" type="text/css" href="./lib/toastify/1.11.2/min.css">
+<script type="text/javascript" src="./lib/toastify/1.11.2/min.js"></script>
+<script src="js/tooter.js"></script>
+<script src="js/toot-button.js"></script>
+<script src="js/toot-dialog.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/web-mention.js"></script>
+<script src="js/mpurse-send-button.js"></script>
+<script src="js/tweet-button-base64-svg.js"></script>
+<script src="js/tweet-button-generator.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<h1>ツイートボタン・ジェネレータ</h1>
+<table>
+<tr><th>テキスト</th><td><textarea id="text" placeholder="いいね！"></textarea></td></tr>
+<tr><th>URL</th><td><input id="url" placeholder="https://example.com/index.html"></td></tr>
+<tr><th>タグ</th><td><input id="hashtags" placeholder="tag1,tag2,tag3"></td></tr>
+<tr><th>画像</th><td>
+<select id="src">
+    <option value="circle" selected>円</option>
+    <option value="rounded-square">角丸</option>
+    <option value="square">四角</option>
+</select>
+</td></tr>
+<tr><th>サイズ</th><td>
+<select id="size">
+    <option value="16">16</option>
+    <option value="32">32</option>
+    <option value="64" selected>64</option>
+    <option value="128">128</option>
+    <option value="256">256</option>
+</select>
+</td></tr>
+</table>
+<span id="export"></span>
+<textarea id="export-code"></textarea>
+
+<h2>公式アイコンを使用しています</h2>
+<p>画像は<a href="https://about.twitter.com/ja/who-we-are/brand-toolkit">ブランドツールキット - Twitter</a>のものを使用しています。SVG形式のものをBase64化してHTMLに埋め込んでいます。</p>
+
+<footer></script><a href="https://ytyaru.github.io/" title="著者"><img src="./asset/image/avator.png" width="64" height="64">ytyaru</a><mpurse-send-button to="MEHCqJbgiNERCH3bRAtNSSD9uxPViEX1nu" img="coin-monar"></mpurse-send-button><a href="https://ytyaru.github.io/Html.Mpurse.Api.20220517160403/setup.html" title="モナコインを使うには">？</a></footer>
+
+<!-- webmention -->
+<!--
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="いいね！" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
+<a href="https://twitter.com/share?url=https%3A%2F%2Fytyaru.github.io%2FHtml.Tweet.Button.Generator.20220606171017%2F&amp;text=%E3%81%84%E3%81%84%E3%81%AD%EF%BC%81&amp;hashtags=%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%83%9C%E3%82%BF%E3%83%B3%2Cytyaru" target="https://twitter.com/share?url=&amp;text=&amp;hashtags=" rel="noopener noreferrer"><img class="tweet-button" width="64" height="64" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQwMCA0MDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwMCA0MDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiMxQjlERjA7fQ0KCS5zdDF7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8ZyBpZD0iRGFya19CbHVlIj4NCgk8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjIwMCIvPg0KPC9nPg0KPGcgaWQ9IkxvZ29fX3gyMDE0X19GSVhFRCI+DQoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE2My40LDMwNS41Yzg4LjcsMCwxMzcuMi03My41LDEzNy4yLTEzNy4yYzAtMi4xLDAtNC4yLTAuMS02LjJjOS40LTYuOCwxNy42LTE1LjMsMjQuMS0yNQ0KCQljLTguNiwzLjgtMTcuOSw2LjQtMjcuNyw3LjZjMTAtNiwxNy42LTE1LjQsMjEuMi0yNi43Yy05LjMsNS41LTE5LjYsOS41LTMwLjYsMTEuN2MtOC44LTkuNC0yMS4zLTE1LjItMzUuMi0xNS4yDQoJCWMtMjYuNiwwLTQ4LjIsMjEuNi00OC4yLDQ4LjJjMCwzLjgsMC40LDcuNSwxLjMsMTFjLTQwLjEtMi03NS42LTIxLjItOTkuNC01MC40Yy00LjEsNy4xLTYuNSwxNS40LTYuNSwyNC4yDQoJCWMwLDE2LjcsOC41LDMxLjUsMjEuNSw0MC4xYy03LjktMC4yLTE1LjMtMi40LTIxLjgtNmMwLDAuMiwwLDAuNCwwLDAuNmMwLDIzLjQsMTYuNiw0Mi44LDM4LjcsNDcuM2MtNCwxLjEtOC4zLDEuNy0xMi43LDEuNw0KCQljLTMuMSwwLTYuMS0wLjMtOS4xLTAuOWM2LjEsMTkuMiwyMy45LDMzLjEsNDUsMzMuNWMtMTYuNSwxMi45LTM3LjMsMjAuNi01OS45LDIwLjZjLTMuOSwwLTcuNy0wLjItMTEuNS0wLjcNCgkJQzExMC44LDI5Ny41LDEzNi4yLDMwNS41LDE2My40LDMwNS41Ii8+DQo8L2c+DQo8L3N2Zz4NCg0K"></a>
+<toot-dialog domain="mstdn.jp pawoo.net" status="いいね！"></toot-dialog>
+<div id="web-mention-counts">
+    <span id="web-mention-count"></span>
+    <div id="web-mention-like" title="いいね！">
+        <span id="web-mention-like-icon">♥</span>
+        <span id="web-mention-like-count">0</span>
+        <span id="web-mention-like-author"></span>
+    </div>
+    <div id="web-mention-bookmark" title="ブックマーク">
+        <span id="web-mention-bookmark-icon">🔖</span>
+        <span id="web-mention-bookmark-count">0</span>
+        <span id="web-mention-bookmark-author"></span>
+    </div>
+    <div id="web-mention-rsvp" title="出欠確認">
+        <span id="web-mention-rsvp-icon">📅</span>
+        <span id="web-mention-rsvp-count">0</span>
+        <span id="web-mention-rsvp-author"></span>
+    </div>
+</div>
+<div id="web-mention-comment"></div>
+
+</body>
+</html>
