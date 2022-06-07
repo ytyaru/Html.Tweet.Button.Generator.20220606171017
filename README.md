@@ -2,7 +2,7 @@
 
 # Tweet.Button.Generator
 
-ã regsvr ¿ ã ‡ ³ ã ‘ç” Ÿæˆ ã ™ ã ‹
+Tweet button generator.
 
 # DEMO
 
