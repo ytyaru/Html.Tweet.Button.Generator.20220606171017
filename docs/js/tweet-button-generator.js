@@ -32,7 +32,7 @@ class TweetButtonGenerator {
         url.searchParams.set('text', document.getElementById('text').value)
         url.searchParams.set('hashtags', document.getElementById('hashtags').value)
         a.setAttribute('href', url.href)
-        a.setAttribute('target', url.href)
+        a.setAttribute('target', '_blank')
         a.setAttribute('rel', 'noopener noreferrer')
         return a
     }
